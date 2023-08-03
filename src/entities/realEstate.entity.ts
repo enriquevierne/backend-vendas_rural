@@ -31,10 +31,10 @@ class RealEstate {
   @Column({ type: "integer" })
   size: number;
 
-  @CreateDateColumn({ type: "date" })
+  @CreateDateColumn({ type: "timestamp" })
   createdAt: string;
 
-  @UpdateDateColumn({ type: "date" })
+  @UpdateDateColumn({ type: "timestamp" })
   updatedAt: string;
 
   @OneToOne(() => Address)

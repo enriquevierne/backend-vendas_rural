@@ -3,7 +3,7 @@ import { AppDataSource } from "./data-source";
 
 AppDataSource.initialize()
   .then((): void => {
-    console.log("Server is running");
+    console.log("Server is running on MariaDB");
 
     const PORT: number = Number(process.env.PORT) || 3000;
 
