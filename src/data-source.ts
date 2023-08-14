@@ -12,7 +12,7 @@ const settings = (): DataSourceOptions => {
   if (!dbUrl) throw new Error("Missing env var: 'DATABASE_URL'");
 
   return {
-    type: "mariadb",
+    type: "postgres",
     url: dbUrl,
     logging: true,
     entities: [entitiesPath],

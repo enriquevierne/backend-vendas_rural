@@ -1,9 +1,9 @@
-import app from "./app";
-import { AppDataSource } from "./data-source";
+import app from "./src/app";
+import { AppDataSource } from "./src/data-source";
 
 AppDataSource.initialize()
   .then((): void => {
-    console.log("Server is running on MariaDB");
+    console.log("Server is running on postgres");
 
     const PORT: number = Number(process.env.PORT) || 3000;
 

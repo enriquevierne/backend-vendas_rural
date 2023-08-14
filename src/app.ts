@@ -19,6 +19,10 @@ const optionsCors = {
   optionsSuccessStatus: 200,
 };
 
+app.get("/teste", (req, res) => {
+  console.log("funcionando");
+  return res.status(200).send({ message: "okay" });
+});
 app.use("/login", sessionRoute);
 app.use("/users", usersRoute);
 app.use("/schedules", schedulesRoute);
